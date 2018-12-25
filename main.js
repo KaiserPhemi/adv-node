@@ -84,7 +84,7 @@ const httpsServerOptions = {
 };
 
 // instantiate https server
-const httpsServer = http.createServer((httpsServerOptions, request, response) => {
+const httpsServer = http.createServer(httpsServerOptions, (request, response) => {
 	unifiedServer(request, response);
 });
 
